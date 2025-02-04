@@ -39,9 +39,7 @@ resource "azurerm_linux_virtual_machine" "mcitbhrg01linux" {
     azurerm_network_interface.mcitbhrg01.id,
   ]
 
-  admin_ssh_key {
-    username   = "adminuser"
-    public_key = file("~/.ssh/id_rsa.pub")
+  admin_password = "C'QG:<$?qyL}~5#]"
   }
 
   os_disk {
